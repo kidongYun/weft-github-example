@@ -1,0 +1,28 @@
+# @schedule 0 */1 * * * *
+# @schedule-enabled true
+
+### Sample GET request - httpbin
+GET https://httpbin.org/get
+
+### Sample POST request - httpbin
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "message": "This is a test message"
+}
+
+### Sample GET with query parameters
+GET https://httpbin.org/get?name=test&value=123
+
+### Sample request with headers
+GET https://httpbin.org/headers
+Accept: application/json
+User-Agent: Weft-Test-Client/1.0
+
+### Sample request using environment variables
+GET {{BASE_URL}}/api/users
+Authorization: Bearer {{API_KEY}}
+Content-Type: application/json
