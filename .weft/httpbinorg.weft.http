@@ -1,5 +1,5 @@
 # @schedule 0 */1 * * * *
-# @schedule-enabled false
+# @schedule-enabled true
 
 ### Sample GET request - httpbin
 GET https://httpbin.org/get
